@@ -1,27 +1,32 @@
 const express = require('express');
 const router = express.Router();
 
-// Ejemplo de rutas, puedes ajustarlas según tus necesidades
-router.get('/jugadores', (req, res) => {
-  // Lógica para obtener jugadores
-  res.send('Obtener jugadores');
-});
+// Rutas de jugadores
+const jugadoresRoutes = require('./routes/jugadoresRoutes');
+router.use('/jugadores', jugadoresRoutes);
 
-router.post('/jugadores', (req, res) => {
-  // Lógica para agregar un jugador
-  res.send('Agregar jugador');
-});
+// Rutas de torneos
+const torneosRoutes = require('./routes/torneosRoutes');
+router.use('/torneos', torneosRoutes);
 
-router.get('/torneos', (req, res) => {
-  // Lógica para obtener torneos
-  res.send('Obtener torneos');
-});
+// Rutas de campos
+const camposRoutes = require('./routes/camposRoutes');
+router.use('/campos', camposRoutes);
 
-router.post('/torneos', (req, res) => {
-  // Lógica para agregar un torneo
-  res.send('Agregar torneo');
-});
+// Rutas de tarjetas
+const tarjetasRoutes = require('./routes/tarjetasRoutes');
+router.use('/tarjetas', tarjetasRoutes);
 
-// Agrega más rutas según sea necesario
+// Rutas de categorías
+const categoriasRoutes = require('./routes/categoriasRoutes');
+router.use('/categorias', categoriasRoutes);
+
+// Rutas de resultados
+const resultadosRoutes = require('./routes/resultadosRoutes');
+router.use('/resultados', resultadosRoutes);
+
+// Rutas de hoyos
+const hoyosRoutes = require('./routes/hoyosRoutes');
+router.use('/hoyos', hoyosRoutes);
 
 module.exports = router;
