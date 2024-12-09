@@ -4,11 +4,11 @@
     "description": "Frontend for Hooligans Golf",
     "main": "index.js",
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
-    },
+  "start": "react-scripts --openssl-legacy-provider start",
+  "build": "react-scripts --openssl-legacy-provider build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
     "dependencies": {
       "react": "^17.0.2",
       "react-dom": "^17.0.2",
