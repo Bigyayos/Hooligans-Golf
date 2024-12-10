@@ -6,10 +6,18 @@ const Jugador = sequelize.define('Jugador', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  email: {
+  licencia: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true
+  },
+  handicap: {
+    type: DataTypes.FLOAT,
+    allowNull: true
+  },
+  fotoPerfil: {
+    type: DataTypes.STRING,
+    allowNull: true
   },
   // Otros campos necesarios
 });

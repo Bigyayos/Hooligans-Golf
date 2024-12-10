@@ -4,7 +4,5 @@ const tarjetaPuntuacionController = require('../controllers/tarjetaPuntuacionCon
 
 router.post('/tarjetas-puntuacion', tarjetaPuntuacionController.createTarjetaPuntuacion);
 router.get('/tarjetas-puntuacion', tarjetaPuntuacionController.getTarjetasPuntuacion);
-router.put('/tarjetas-puntuacion/:id', tarjetaPuntuacionController.updateTarjetaPuntuacion);
-router.delete('/tarjetas-puntuacion/:id', tarjetaPuntuacionController.deleteTarjetaPuntuacion);
 
 module.exports = router;
